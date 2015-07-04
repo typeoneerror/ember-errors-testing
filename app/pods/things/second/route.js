@@ -8,7 +8,7 @@ export default Ember.Route.extend({
 
   actions: {
 
-    error(error, transition, model) {
+    error(error) {
       console.log('Error in Second', error);
       return true;
     }

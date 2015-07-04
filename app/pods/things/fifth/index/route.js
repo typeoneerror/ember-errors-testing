@@ -6,7 +6,7 @@ export default Ember.Route.extend({
 
   model() {
     return Ember.RSVP.reject('Problem with Fifth Thing').then(null, function(error) {
-      return { error: error }
+      return { error: error };
     });
   },
 
@@ -24,7 +24,7 @@ export default Ember.Route.extend({
 
   actions: {
 
-    error(error, transition) {
+    error() {
       console.log('things.fifth.index error');
       return true;
     }

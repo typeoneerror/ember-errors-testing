@@ -1,0 +1,11 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <HostName>ember-errors-testing.s3-website-us-west-2.amazonaws.com</HostName>
+      <ReplaceKeyPrefixWith>#/</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>

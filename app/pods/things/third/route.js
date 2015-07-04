@@ -6,7 +6,7 @@ export default Ember.Route.extend({
     return Ember.RSVP.reject('Problem with Third Thing').then(null, (error) => {
       return {
         error: error
-      }
+      };
     });
   },
 
