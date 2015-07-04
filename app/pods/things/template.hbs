@@ -1,0 +1,11 @@
+<ul>
+  <li>{{link-to "First" "things.first"}} (no error, enters route)</li>
+  <li>{{link-to "Second" "things.second"}} (error, does not enter route)</li>
+  <li>{{link-to "Third" "things.third"}} (error, enters route)</li>
+  <li>{{link-to "Fourth" "things.fourth"}} (with index, no error, enters route)</li>
+  <li>{{link-to "Fifth" "things.fifth"}} (with index, error, enters route, custom error)</li>
+</ul>
+
+<p style="color: red;">{{errorMessage}}</p>
+
+{{outlet}}
